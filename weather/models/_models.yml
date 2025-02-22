@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: temp_greater_than_35
+    description: Temperature that is greater than 35 celcius
+    columns:
+      - name: dt
+        description: Datastamp
+        data_tests:
+          - not_null
+      - name: temp
+        description: Temperature in celcius
+        data_tests:
+          - not_null
+      - name: feels_like
+        description: Temperature we feel in celcius
